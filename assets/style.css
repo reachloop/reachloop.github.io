@@ -1,0 +1,42 @@
+@font-face { font-family: "Poppins"; font-weight: 800; font-display: swap;
+  src: url("/assets/fonts/Poppins-ExtraBold.ttf") format("truetype"); }
+:root { --top: #0b1026; --bottom: #3b2fd9; --accent: #b9b4ff; --ink: #ffffff;
+  --muted: rgba(255,255,255,.78); --card: rgba(255,255,255,.08); --line: rgba(255,255,255,.16); }
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; min-height: 100vh; color: var(--ink);
+  font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(180deg, var(--top) 0%, var(--bottom) 100%) fixed; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 28px 18px 56px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none;
+  font-family: Poppins, sans-serif; font-weight: 800; font-size: 20px; }
+.brand span.r { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px;
+  background: rgba(255,255,255,.14); }
+.tag { font-size: 13px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px;
+  padding: 4px 10px; white-space: nowrap; }
+h1 { font-family: Poppins, sans-serif; font-weight: 800; line-height: 1.12; letter-spacing: -.01em;
+  font-size: clamp(32px, 7vw, 52px); margin: 48px 0 16px; }
+h2 { font-family: Poppins, sans-serif; font-weight: 800; font-size: 24px; margin: 44px 0 14px; }
+h1, h2, p, li { overflow-wrap: break-word; }
+p.sub { font-size: 19px; color: var(--muted); margin: 0 0 22px; max-width: 40em; }
+.note { display: inline-block; background: var(--card); border: 1px solid var(--line);
+  border-left: 4px solid var(--accent); border-radius: 12px; padding: 12px 14px; font-size: 15px; }
+.cta { display: inline-block; margin-top: 22px; background: var(--accent); color: #111;
+  font-weight: 700; text-decoration: none; padding: 14px 22px; border-radius: 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+  gap: 12px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+.card b { display: block; font-size: 16px; margin-bottom: 4px; }
+.card p { margin: 0; color: var(--muted); font-size: 15px; }
+.step { font-family: Poppins, sans-serif; color: var(--accent); font-size: 14px; }
+ul.honest { padding-left: 20px; color: var(--muted); }
+ul.honest li { margin: 6px 0; }
+.waitlist { background: rgba(0,0,0,.22); border: 1px solid var(--line); border-radius: 18px;
+  padding: 20px; margin-top: 12px; }
+.waitlist iframe { width: 100%; min-height: 420px; border: 0; }
+a.seg { color: var(--ink); text-decoration: none; display: block; }
+a.seg:hover .card { border-color: var(--accent); }
+footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted);
+  font-size: 13px; }
+footer a { color: var(--muted); }
